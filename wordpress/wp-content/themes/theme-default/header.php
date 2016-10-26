@@ -20,8 +20,10 @@
 
 	<?php wp_head(); ?>
 
+    <?php include 'le_scripts.php' ?>
+
 	<?php include 'le_styles.php' ?>
 
 </head>
 
-<body <?php body_class(); ?>>
+<body>
