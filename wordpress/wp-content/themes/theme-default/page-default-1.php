@@ -50,8 +50,8 @@
                     2.) Dolore magna aliqua. Ut enim ad minim veniam.<br/>
                     3.) Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.<br/>                   
                 </p>
-            </div>
-            
+            </div>           
+
             <div class="options page">
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>
@@ -80,6 +80,16 @@
                     Note:<br/>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
                 </p>
+            </div>
+
+            <div class="poli-1 cool">
+                <img src="<?php echo get_bloginfo('template_directory');?>/img/poli-1.png" alt="" />
+            </div>
+            <div class="poli-2 cool">
+                <img src="<?php echo get_bloginfo('template_directory');?>/img/poli-2.png" alt="" />
+            </div>
+            <div class="poli-3 cool">
+                <img src="<?php echo get_bloginfo('template_directory');?>/img/poli-3.png" alt="" />
             </div>
 
         </div>
