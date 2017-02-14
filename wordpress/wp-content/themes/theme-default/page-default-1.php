@@ -28,23 +28,16 @@
 
         <div class="front scroll">
             
-            <div class="description page">
+            <div class="case-1 page blur">
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</br>
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</br>
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</br>
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in</br>
-                    culpa qui officia deserunt mollit anim id est laborum.</br>
-
-                    <hr style="border:none; border-bottom: 1px #ddd solid;" />
-                    Note:<br/>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                    et dolore magna aliqua.</br>
                 </p>
             </div>
             
-            <div class="documentation page">
-                <h2>Lorem ipsum dolor sit amet</h2>
+            <div class="case-2 page blur">
+                <h2>Lorem ipsum</h2>
                 <p>
                     1.) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<br/>
                     2.) Dolore magna aliqua. Ut enim ad minim veniam.<br/>
@@ -52,43 +45,43 @@
                 </p>
             </div>           
 
-            <div class="options page">
+            <div class="case-3 page blur">
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</br>
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</br>
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</br>
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in</br>
-                    culpa qui officia deserunt mollit anim id est laborum.</br>
-
-                    <hr style="border:none; border-bottom: 1px #ddd solid;" />
-                    Note:<br/>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                    et dolore magna aliqua.</br>
                 </p>
             </div>
             
-            <div class="download page">
+            <div class="case-4 page blur">
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</br>
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</br>
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</br>
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in</br>
-                    culpa qui officia deserunt mollit anim id est laborum.</br>
+                    et dolore magna aliqua.</br>
+                </p>
+            </div>
 
-                    <hr style="border:none; border-bottom: 1px #ddd solid;" />
-                    Note:<br/>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+            <div class="case-5 page blur">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</br>
+                    et dolore magna aliqua.</br>
                 </p>
             </div>
 
             <div class="poli-1 cool">
                 <img src="<?php echo get_bloginfo('template_directory');?>/img/poli-1.png" alt="" />
             </div>
+
             <div class="poli-2 cool">
                 <img src="<?php echo get_bloginfo('template_directory');?>/img/poli-2.png" alt="" />
             </div>
+
             <div class="poli-3 cool">
+                <img src="<?php echo get_bloginfo('template_directory');?>/img/poli-3.png" alt="" />
+            </div>
+
+            <div class="poli-4 cool">
                 <img src="<?php echo get_bloginfo('template_directory');?>/img/poli-3.png" alt="" />
             </div>
 

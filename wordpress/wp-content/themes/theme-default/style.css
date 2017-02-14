@@ -39,19 +39,16 @@ body
 
 h1,
 h2,
-h3
-{
-    color: #;
-}
-
-h3
-{
-    margin: 10px 0;
-}
-
+h3,
+p,
 a
 {
-    color: red;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    line-height: 1;
 }
 
 a img
@@ -77,12 +74,6 @@ a img
     padding-left: 30px;
 }
 
-.header .credits
-{
-    float: right;
-    padding-top: 15px;
-}
-
 .horizon
 {
     line-height: 0;
@@ -105,75 +96,92 @@ a img
     /*width: 6000px;*/
 }
 
-.intro
-{
-    position: absolute;
-    left: 500px;
-    top: 0px;
-    padding-right: 50px;
-    background: url('../images/scroll.png') no-repeat right 5px;
-}
-
 .page
 {
     top: 0px;
     width: 500px;
-    padding: 10px 30px;
+    padding: 15px 15px;
     position: absolute;
     background-color: #c5c5c5; 
     opacity: 0.8;
 }
 
-.description
+.case-1
 {
-    left: 1400px;
+    width: 320px;
+    top: -60px;
+    left: 1570px;
+    height: 200px;
 }
 
-.documentation
+.case-2
 {
-    left: 2150px;
-    width: 350px;
+    width: 320px;
     top: -100px;
+    left: 2090px;
+    height: 250px;
 }
 
-.options
+.case-3
 {
-    width: 400px;
-    left: 2600px;
+    width: 320px;
+    top: -70px;
+    left: 2650px;
+    height: 200px;
 }
 
-.download
+.case-4
 {
-    width: 280px;
+    width: 320px;
+    top: -30px;
     left: 3200px;
-    top: -40px;
+    height: 400px;
 }
 
-.license
+.case-5
 {
-    padding: 100px 30px 30px 30px;
+    width: 500px;
+    top: 220px;
+    left: 1700px;
+    height: 200px;
+}
+
+.blur {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
 }
 
 .poli-1 {
     width: 110px;
-    left: 2010px;
-    top: -70px;
+    left: 2000px;
+    top: 80px;
     position: absolute;
     opacity: 0.8;
 }
 
 .poli-2 {
-    width: 110px;
-    left: 1930px;
-    top: 260px;
+    width: 80px;
+    left: 3090px;
+    top: 270px;
     position: absolute;
     opacity: 0.8;
 }
 
 .poli-3 {
-    width: 110px;
-    left: 2370px;
-    top: 210px;
+    width: 60px;
+    left: 2510px;
+    top: -60px;
+    position: absolute;
+    opacity: 0.8;
+}
+
+.poli-4 {
+    width: 45px;
+    left: 2520px;
+    top: 250px;
     position: absolute;
     opacity: 0.8;
 }
