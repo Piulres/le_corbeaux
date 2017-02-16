@@ -31,7 +31,7 @@ body
 {
     padding: 0;
     margin: 0;
-    font-family: 'Tahoma', sans-serif;
+    font-family: 'Verdana', sans-serif;
     font-weight: 300;
     font-size: 16px;
     color: #555;
@@ -49,12 +49,24 @@ a
     box-shadow: none;
     text-decoration: none;
     line-height: 1;
+    font-family: 'Verdana', sans-serif;
+    color: #555;
 }
 
 a img
 {
     border: none;
 }
+
+.shield 
+{
+    width: 1000px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Front Page */
 
 .header
 {
@@ -146,7 +158,8 @@ a img
     height: 200px;
 }
 
-.blur {
+.blur 
+{
     -webkit-filter: blur(5px);
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
@@ -154,7 +167,8 @@ a img
     filter: blur(5px);
 }
 
-.poli-1 {
+.poli-1 
+{
     width: 110px;
     left: 2000px;
     top: 80px;
@@ -162,7 +176,8 @@ a img
     opacity: 0.8;
 }
 
-.poli-2 {
+.poli-2 
+{
     width: 80px;
     left: 3090px;
     top: 270px;
@@ -170,7 +185,8 @@ a img
     opacity: 0.8;
 }
 
-.poli-3 {
+.poli-3 
+{
     width: 60px;
     left: 2510px;
     top: -60px;
@@ -178,7 +194,8 @@ a img
     opacity: 0.8;
 }
 
-.poli-4 {
+.poli-4 
+{
     width: 45px;
     left: 2520px;
     top: 250px;
@@ -186,11 +203,13 @@ a img
     opacity: 0.8;
 }
 
-.cool img {
+.cool img 
+{
     width: 100%;
 }
 
-.cool {
+.cool 
+{
     -webkit-animation-name: spin;
     -webkit-animation-duration: 20000ms;
     -webkit-animation-iteration-count: infinite;
@@ -209,23 +228,70 @@ a img
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-@-ms-keyframes spin {
+
+@-ms-keyframes spin 
+{
     from { -ms-transform: rotate(0deg); }
     to { -ms-transform: rotate(360deg); }
 }
-@-moz-keyframes spin {
+
+@-moz-keyframes spin 
+{
     from { -moz-transform: rotate(0deg); }
     to { -moz-transform: rotate(360deg); }
 }
-@-webkit-keyframes spin {
+
+@-webkit-keyframes spin 
+{
     from { -webkit-transform: rotate(0deg); }
     to { -webkit-transform: rotate(360deg); }
 }
-@keyframes spin {
+
+@keyframes spin 
+{
     from {
         transform:rotate(0deg);
     }
     to {
         transform:rotate(360deg);
     }
+}
+
+/* Single Page */
+.background
+{
+    background-image: url(img/crow_single.jpg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: -30px 0px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+#single .right 
+{ 
+    width: 70%;
+    float: right;
+    position: relative;
+    max-width: 675px;
+    margin-bottom: 30px; 
+}
+#single .left 
+{
+    width: 30%;
+    float: left;
+    position: fixed;
+    max-width: 275px;
+    margin-top: 330px;
+}
+
+#single .content .entry p
+{
+    line-height: 1.5;
+}
+
+#single .infos 
+{
+    margin-top: 10px;
 }

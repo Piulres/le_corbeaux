@@ -1,26 +1,14 @@
 <?php
-
-
-
 /**
-
-
 
  * Index Page Template
 
-
-
  **/
-
-
-
 ?>
-
-
 
 <?php get_header(); ?>
 
-<div id="home" class="container">
+<div id="index" class="container">
 
 	<section>
 
@@ -28,11 +16,7 @@
 
 			<div class="col-md-12 col-xs-12">
 
-				<h1 class="center">Content</h1>
-				<ul>
-					<li><a href="/tonca/wordpress/page-1">Exemplo #1 - Filters HTML Example</a></li>
-					<li><a href="/tonca/wordpress/page-2">Exemplo #2 - Wordpress Example</a></li>
-				</ul>
+				<h1 class="center">Index</h1>
 
 			</div>
 
