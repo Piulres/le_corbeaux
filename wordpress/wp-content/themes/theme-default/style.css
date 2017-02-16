@@ -35,6 +35,7 @@ body
     font-weight: 300;
     font-size: 16px;
     color: #555;
+    background-color: #fff;
 }
 
 h1,
@@ -91,6 +92,7 @@ a img
     line-height: 0;
     z-index: 100;
     width: 4500px;
+    background-color: #fff;
 }
 
 .middle
@@ -98,6 +100,7 @@ a img
     z-index: 250;
     line-height: 0;
     width: 3000px;
+    background-color: transparent;
 }
 
 .front
@@ -105,6 +108,7 @@ a img
     z-index: 500;
     top: 150px;
     width: 3800px;
+    background-color: transparent;
     /*width: 6000px;*/
 }
 
