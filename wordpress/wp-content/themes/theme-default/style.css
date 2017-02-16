@@ -273,15 +273,16 @@ a img
     position: fixed;
 }
 
-#single .right 
+.right 
 { 
     width: 70%;
     float: right;
     position: relative;
     max-width: 675px;
     margin-bottom: 30px; 
+    padding-top: 100px; 
 }
-#single .left 
+.left 
 {
     width: 30%;
     float: left;
@@ -290,12 +291,12 @@ a img
     margin-top: 330px;
 }
 
-#single .content .entry p
+.content .entry p
 {
     line-height: 1.5;
 }
 
-#single .infos 
+.infos 
 {
     margin-top: 10px;
 }

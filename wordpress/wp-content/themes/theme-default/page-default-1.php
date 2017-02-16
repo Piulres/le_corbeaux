@@ -1,16 +1,8 @@
 <?php /* Template Name: Page Default #1 */ ?>
 
 <?php get_header(); ?>
-    
-    <div class="container" >
         
-        <div class="header scrollme animateme" data-when="view" data-from="0.5" data-to="0" data-opacity="0" data-easing="easeout">
-            <div class="logo">
-                <a href="/">
-                    <img src="<?php echo get_bloginfo('template_directory');?>/img/header_png.png" alt="Le Corbeaux">
-                </a>
-            </div>
-        </div>
+    <div class="container" >
 
         <div class="horizon scroll">
             <img src="<?php echo get_bloginfo('template_directory');?>/img/horizonn.png" alt="" />
