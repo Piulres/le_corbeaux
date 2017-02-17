@@ -28,6 +28,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 * { list-style-type: none; }
 
+html
+{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+}
+body
+{
+    height:100%; /* force the BODY element to match the height of the HTML element */
+}
+
 html,
 body
 {
@@ -77,6 +87,20 @@ a img
 }
 
 /* Front Page */
+.boxhome
+{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+}
+
+.boxhome .scroll img {
+    width: 100%;
+    height: 100%;
+}
 
 .header
 {
@@ -102,6 +126,7 @@ a img
     line-height: 0;
     z-index: 100;
     width: 4500px;
+    height: 100%;
     background-color: #fff;
 }
 
@@ -110,7 +135,7 @@ a img
     z-index: 250;
     line-height: 0;
     width: 3000px;
-    background-color: transparent;
+    background-color: #fff;
 }
 
 .front
@@ -118,7 +143,6 @@ a img
     z-index: 500;
     top: 150px;
     width: 3800px;
-    background-color: transparent;
     /*width: 6000px;*/
 }
 

@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
         
-    <div class="container" >
+    <div class="container boxhome">
 
         <div class="horizon scroll">
             <img src="<?php echo get_bloginfo('template_directory');?>/img/horizonn.png" alt="" />
