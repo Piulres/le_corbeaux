@@ -10,11 +10,13 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="description" content="">
+	<title>Le Corbeaux</title>
 
-	<meta name="author" content="">
+	<meta name="description" content="Le Corbeaux, Content made to expand your mind.">
 
-	<link rel="icon" href="../../favicon.ico">
+	<meta name="author" content="Renan Emigdio">
+
+	<link rel="icon" href="<?php echo get_bloginfo('template_directory');?>/img/favicon.ico">
 
 	<!-- wp_head -->
 

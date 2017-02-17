@@ -15,20 +15,25 @@
         <div class="front scroll">
             
             <div class="case-1 page blur">
-                <h2>Lorem ipsum dolor sit amet</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</br>
-                    et dolore magna aliqua.</br>
-                </p>
+                <h2>Hello Friend</h2>
+                <p>Welcome to Le_Corbeaux. </br>Content made to expand your mind. </br> Site in develop.</p>
             </div>
             
             <div class="case-2 page blur">
-                <h2>Lorem ipsum</h2>
-                <p>
-                    1.) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<br/>
-                    2.) Dolore magna aliqua. Ut enim ad minim veniam.<br/>
-                    3.) Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.<br/>                   
-                </p>
+                <h2>Last Posts in Category Teste</h2>
+                <div class="entry">
+                    <?php
+
+                    global $post;
+                    $args = array( 'posts_per_page' => 5, 'offset'=> 1, 'category' => 'Teste' );
+
+                    $myposts = get_posts( $args );
+                    foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+                        <p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+                    <?php endforeach; 
+                    wp_reset_postdata();?>
+
+                </div>
             </div>           
 
             <div class="case-3 page blur">
