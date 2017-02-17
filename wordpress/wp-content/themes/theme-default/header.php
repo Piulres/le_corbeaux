@@ -10,9 +10,9 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Le Corbeaux</title>
+	<title>Le Corbeaux.</title>
 
-	<meta name="description" content="Le Corbeaux, Content made to expand your mind.">
+	<meta name="description" content="Le Corbeaux. Content made to expand your mind.">
 
 	<meta name="author" content="Renan Emigdio">
 

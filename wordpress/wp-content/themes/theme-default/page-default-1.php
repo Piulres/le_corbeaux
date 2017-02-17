@@ -1,4 +1,4 @@
-<?php /* Template Name: Page Default #1 */ ?>
+<?php /* Template Name: Home Page Template */ ?>
 
 <?php get_header(); ?>
         
