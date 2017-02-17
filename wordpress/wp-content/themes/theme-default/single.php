@@ -50,6 +50,12 @@
 
 							</div>
 
+							<div class="search">
+
+								<?php get_search_form(); ?>
+
+							</div>		
+
 						<?php endwhile; else : ?>
 
 							<!-- The very first "if" tested to see if there were any Posts to -->

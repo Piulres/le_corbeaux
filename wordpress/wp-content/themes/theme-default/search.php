@@ -17,16 +17,8 @@ Template Name: Search Page
 			<section>
 
 				<h2 class="search-title">
-					<?php echo $wp_query->found_posts; ?> <?php _e( 'Search Results Found For', 'locale' ); ?>: "<?php the_search_query(); ?>"
+					<?php echo $wp_query->found_posts; ?> <?php _e( 'search results found for', 'locale' ); ?>: <?php the_search_query(); ?>
 				</h2>
-
-			</section>
-
-		</div>
-
-		<div class="right">	
-
-			<section>
 
 				<div class="search">
 
@@ -34,16 +26,28 @@ Template Name: Search Page
 
 				</div>		
 
+			</section>
+
+		</div>
+
+		<div class="right">	
+
+			<section>				
+
 				<div class="posts">
 
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+						<div class="box">
 
 						<h2>
 							<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
 								<?php the_title();?>
 							</a>
 						</h2>
-						<p><?php the_excerpt(); ?></p>		
+						
+						<p class="excerpt"><?php the_excerpt(); ?></p>		
+
+						</div>
 
 					<?php endwhile; else : ?>
 

@@ -48,11 +48,17 @@
             </div>
 
             <div class="case-5 page blur">
-                <h2>Lorem ipsum dolor sit amet</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</br>
-                    et dolore magna aliqua.</br>
-                </p>
+                <h2>Recent Posts</h2>
+                <div class="entry">
+                <?php
+                    $args = array( 'numberposts' => '7' );
+                    $recent_posts = wp_get_recent_posts( $args );
+                    foreach( $recent_posts as $recent ){
+                        echo '<p><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a></p>';
+                    }
+                    wp_reset_query();
+                ?>
+                </div>
             </div>
 
             <div class="poli-1 cool">
