@@ -36,6 +36,8 @@ html
 body
 {
     height:100%; /* force the BODY element to match the height of the HTML element */
+
+    
 }
 
 html,
@@ -87,14 +89,16 @@ a img
 }
 
 /* Front Page */
-.boxhome
-{
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    overflow:hidden;
+.none {
+    display: none;
+}
+
+.crow {
+
+    background-image: url(img/crow.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 400px;
 }
 
 .boxhome .scroll img {
@@ -149,11 +153,12 @@ a img
 .page
 {
     top: 0px;
-    width: 500px;
+    width: 100%;
     padding: 15px 15px;
     position: absolute;
-    background-color: #c5c5c5; 
+    background-color: #ccc; 
     opacity: 0.8;
+
 }
 .page h2 {
     margin-bottom: 10px;
@@ -428,3 +433,54 @@ margin-bottom: 30px;
 .archbysubj ul li ul li {list-style-type: circle;list-style-type: upper-roman;font-size: 16px;}
 .archtitle {     margin-bottom: 30px;
     font-size: 30px; }
+
+/* Loading */
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 350px;
+  z-index: 9999;
+  width: 300px;
+  height: 500px;  
+  margin: -300px 0 0 -180px;
+
+ /* background-image: url(img/load.png);
+  background-size: 100%;*/
+
+  border: 16px solid #fff;
+
+  -webkit-animation: spin 3s infinite!important;
+  -moz-animation:    spin 3s infinite!important;
+  -o-animation:      spin 3s infinite!important;
+  animation:         spin 3s infinite!important;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(180deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(180deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}

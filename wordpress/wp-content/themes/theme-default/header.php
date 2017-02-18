@@ -28,28 +28,30 @@
 
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> onload="myFunction()" style="margin:0;">
 
-<?php if ( is_front_page() ) { ?>
-	
-	<div class="header scrollme animateme" data-when="view" data-from="0.5" data-to="0" data-opacity="0" data-easing="easeout">
-	    <div class="logo">
-	        <a href="<?php echo get_home_url(); ?>">
-	            <img src="<?php echo get_bloginfo('template_directory');?>/img/header_png.png" alt="Le Corbeaux">
-	        </a>
-	    </div>
-	</div>
+<div id="myDiv" class="animate-bottom">
 
-<?php } else { ?>
+	<?php if ( is_front_page() ) { ?>
+		
+		<div class="header scrollme animateme" data-when="view" data-from="0.5" data-to="0" data-opacity="0" data-easing="easeout">
+		    <div class="logo">
+		        <a href="<?php echo get_home_url(); ?>">
+		            <img src="<?php echo get_bloginfo('template_directory');?>/img/header_png.png" alt="Le Corbeaux">
+		        </a>
+		    </div>
+		</div>
 
-	<div class="header">
-	    <div class="logo">
-	        <a href="<?php echo get_home_url(); ?>">
-	            <img src="<?php echo get_bloginfo('template_directory');?>/img/header_png.png" alt="Le Corbeaux">
-	        </a>
-	    </div>
-	</div>
+	<?php } else { ?>
 
-<?php } ?>
+		<div class="header">
+		    <div class="logo">
+		        <a href="<?php echo get_home_url(); ?>">
+		            <img src="<?php echo get_bloginfo('template_directory');?>/img/header_png.png" alt="Le Corbeaux">
+		        </a>
+		    </div>
+		</div>
+
+	<?php } ?>
 
 
