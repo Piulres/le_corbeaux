@@ -1,12 +1,4 @@
-$(function() {
-    $("body").prognroll({
-        height:5,        //Progress bar height
-        color:"#b3b3b3", //Progress bar background color
-        position:"top",  //Progress bar position can be "top" or "bottom"
-        custom:false     //If you make it true, you can add your custom div and see it's scroll progress on the page    
-    });
-});
-
+$(window).scrollTop(0);
 
 $(window).scroll(function() {  
 
@@ -62,4 +54,13 @@ $(window).scroll(function() {
 
     }
 
+});
+
+$(function() {
+    $("body").prognroll({
+        height:5,        //Progress bar height
+        color:"#b3b3b3", //Progress bar background color
+        position:"top",  //Progress bar position can be "top" or "bottom"
+        custom:false     //If you make it true, you can add your custom div and see it's scroll progress on the page    
+    });
 });

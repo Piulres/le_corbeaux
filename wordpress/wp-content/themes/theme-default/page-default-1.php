@@ -69,7 +69,7 @@
                 </div>
             </div>
 
-            <div class="poli-1 cool">
+            <!-- <div class="poli-1 cool">
                 <img src="<?php echo get_bloginfo('template_directory');?>/img/poli-1.png" alt="" />
             </div>
 
@@ -83,7 +83,7 @@
 
             <div class="poli-4 cool">
                 <img src="<?php echo get_bloginfo('template_directory');?>/img/poli-3.png" alt="" />
-            </div>
+            </div> -->
 
         </div>
 
@@ -91,10 +91,8 @@
 
     <script type="text/javascript">
 
-        (function($) {
-            $.jInvertScroll(['.scroll']);
-        }(jQuery));
-    
+        $(window).scrollTop(0);
+
         var myVar;
 
         function myFunction() {
@@ -109,6 +107,10 @@
             $('html').removeClass('crow');
             $('#myDiv').removeClass('none');
         }
+        
+        (function($) {
+            $.jInvertScroll(['.scroll']);
+        }(jQuery));
 
     </script>
 

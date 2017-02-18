@@ -157,7 +157,7 @@ a img
     padding: 15px 15px;
     position: absolute;
     background-color: #ccc; 
-    opacity: 0.8;
+    opacity: 0.9;
 
 }
 .page h2 {
@@ -168,22 +168,22 @@ a img
 {
     width: 320px;
     top: -60px;
-    left: 1570px;
+    left: 1600px;
     height: 200px;
 }
 
 .case-2
 {
     width: 320px;
-    top: -100px;
+    top: -60px;
     left: 2090px;
-    height: 250px;
+    height: 200px;
 }
 
 .case-3
 {
     width: 320px;
-    top: -70px;
+    top: -60px;
     left: 2650px;
     height: 200px;
 }
@@ -191,16 +191,16 @@ a img
 .case-4
 {
     width: 320px;
-    top: -30px;
+    top: -60px;
     left: 3200px;
-    height: 400px;
+    height: 200px;
 }
 
 .case-5
 {
-    width: 500px;
+    width: 320px;
     top: 220px;
-    left: 1700px;
+    left: 1600px;
     height: 200px;
 }
 
