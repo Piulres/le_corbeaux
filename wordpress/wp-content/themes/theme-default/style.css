@@ -150,58 +150,80 @@ a img
     /*width: 6000px;*/
 }
 
+body.page
+{
+
+    background-color: #ccc;
+    opacity: 0.8;
+}
+
 .page
 {
     top: 0px;
     width: 100%;
-    padding: 15px 15px;
     position: absolute;
-    background-color: #ccc; 
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
     opacity: 0.9;
 
 }
+
 .page h2 {
     margin-bottom: 10px;
 }
 
 .case-1
 {
-    width: 320px;
-    top: -60px;
+    width: 750px;
+    top: -30px;
     left: 1600px;
-    height: 200px;
+    height: 300px;
+    display: block;
 }
 
 .case-2
 {
-    width: 320px;
-    top: -60px;
-    left: 2090px;
-    height: 200px;
+    width: 750px;
+    top: -30px;
+    left: 2315px;
+    height: 300px;
+    display: block;
 }
 
 .case-3
 {
-    width: 320px;
-    top: -60px;
-    left: 2650px;
-    height: 200px;
+    width: 750px;
+    top: -30px;
+    left: 3030px;
+    height: 300px;
+    display: block;
 }
 
-.case-4
+figure 
 {
-    width: 320px;
-    top: -60px;
-    left: 3200px;
-    height: 200px;
+    margin: 0;
 }
 
-.case-5
+figure:first-child
 {
-    width: 320px;
-    top: 220px;
-    left: 1600px;
-    height: 200px;
+    margin-right: 30px;
+}
+
+.page h2
+{
+    font-family: 'Verdana', sans-serif;
+    font-weight: 600!important;
+    text-transform: none;
+    font-size: 26px;
+    padding-top: 0!important;
+    color: #fff;
+}
+
+.page p
+{   
+    font-size: 16px;
+    color: #fff;
 }
 
 .blur 

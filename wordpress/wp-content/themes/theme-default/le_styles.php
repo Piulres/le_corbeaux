@@ -8,6 +8,11 @@
 
 <link href='<?php echo get_bloginfo('template_directory');?>/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
+
+<!-- <link href='<?php echo get_bloginfo('template_directory');?>/css/set2.css' rel='stylesheet' type='text/css'> -->
+
 <link href='<?php echo get_bloginfo('template_directory');?>/css/jInvertScroll.css' rel='stylesheet' type='text/css'>
+
+<link href='<?php echo get_bloginfo('template_directory');?>/css/set1.css' rel='stylesheet' type='text/css'>
 
 <link href='<?php echo get_bloginfo('template_directory');?>/style.css' rel='stylesheet' type='text/css'>

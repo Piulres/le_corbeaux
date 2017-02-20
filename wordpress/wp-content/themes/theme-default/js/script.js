@@ -1,4 +1,8 @@
-$(window).scrollTop(0);
+$(window).on('beforeunload', function() {
+
+  $('body').fadeOut(225);
+  
+});
 
 $(window).scroll(function() {  
 
@@ -6,53 +10,54 @@ $(window).scroll(function() {
 
     if (scroll >= 1000) {
 
-        $(".page.case-1").removeClass("blur");
+        $(".page.case-1 figure:first-child").removeClass("blur");
 
     } else {
 
-        $(".page.case-1").addClass("blur");
+        $(".page.case-1 figure:first-child").addClass("blur");
 
     }
 
-    if ( scroll >= 1700 ) {
+    if (scroll >= 1500) {
 
-        $(".page.case-2").removeClass("blur");
+        $(".page.case-1 figure:last-child").removeClass("blur");
 
     } else {
 
-        $(".page.case-2").addClass("blur");
+        $(".page.case-1 figure:last-child").addClass("blur");
 
     }
 
-    if ( scroll >= 2700 ) {
+    if (scroll >= 2100) {
 
-        $(".page.case-3").removeClass("blur");
+        $(".page.case-2 figure:first-child").removeClass("blur");
 
     } else {
 
-    	$(".page.case-3").addClass("blur");
+        $(".page.case-2 figure:first-child").addClass("blur");
 
     }
 
-	if ( scroll >= 3500 ) {
+    if (scroll >= 2700) {
 
-        $(".page.case-4").removeClass("blur");
+        $(".page.case-2 figure:last-child").removeClass("blur");
 
     } else {
 
-        $(".page.case-4").addClass("blur");
+        $(".page.case-2 figure:last-child").addClass("blur");
 
     }
 
-    if ( scroll >= 1200 ) {
+    if (scroll >= 3200) {
 
-        $(".page.case-5").removeClass("blur");
+        $(".page.case-3 figure").removeClass("blur");
 
     } else {
 
-        $(".page.case-5").addClass("blur");
+        $(".page.case-3 figure").addClass("blur");
 
     }
+   
 
 });
 

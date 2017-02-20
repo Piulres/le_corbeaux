@@ -16,74 +16,117 @@
 
         <div class="front scroll">
             
-            <div class="case-1 page blur">
-                <h2>Hello Friend</h2>
-                <p>Welcome to Le Corbeaux. </br>Content made to expand your mind. </br> Site in develop.</p>
-            </div>
             
-            <div class="case-2 page blur">
-                <h2>Last Posts in Category Teste</h2>
-                <div class="entry">
+
+            <div class="case-1 page">
+
+                <div class="grid">
+
                     <?php
 
-                        global $post;
-                        $args = array( 'posts_per_page' => 5, 'offset'=> 1, 'category' => 'Teste' );
-                        $myposts = get_posts( $args );
+                    // https://codex.wordpress.org/Class_Reference/WP_Query
 
-                        foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+                    $args = array(
+                        'orderby' => 'title',
+                        'posts_per_page' => '2',
+                        'cat' => 7,
+                    );
 
-                            <p>
-                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                            </p>
+                    $catquery = new WP_Query( $args );
 
-                        <?php endforeach; 
+                    // $catquery = new WP_Query( 'cat=7&posts_per_page=2' );
 
-                    wp_reset_postdata();?>
-                </div>
-            </div>           
-
-            <div class="case-3 page blur">
-                <h2>Lorem ipsum dolor sit amet</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</br>et dolore magna aliqua.</br></p>
-            </div>
-            
-            <div class="case-4 page blur">
-                <h2>Lorem ipsum dolor sit amet</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</br>et dolore magna aliqua.</br></p>
-            </div>
-
-            <div class="case-5 page blur">
-                <h2>Recent Posts</h2>
-                <div class="entry">
+                    while($catquery->have_posts()) : $catquery->the_post();
+                    ?>
                 
-                    <?php
-
-                        $args = array( 'numberposts' => '7' );
-                        $recent_posts = wp_get_recent_posts( $args );
-                        foreach( $recent_posts as $recent ) {
-                            echo '<p><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a></p>';
-                        }
-
-                    wp_reset_query();?>
+                        <figure class="blur effect-sarah">
+                            <img src="<?php echo get_bloginfo('template_directory');?>/img/1.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2><?php the_title(); ?></h2>
+                                <p class="excerpt"><?php the_excerpt(); ?></p>
+                                <a href="<?php the_permalink(); ?>">View more</a>
+                            </figcaption>           
+                        </figure>
+                
+                    <?php endwhile; ?>
 
                 </div>
+
             </div>
 
-            <!-- <div class="poli-1 cool">
-                <img src="<?php echo get_bloginfo('template_directory');?>/img/poli-1.png" alt="" />
+            <div class="case-2 page">
+
+                <div class="grid">
+
+                    <?php
+
+                    // https://codex.wordpress.org/Class_Reference/WP_Query
+
+                    $args = array(
+                        'orderby' => 'title',
+                        'posts_per_page' => '2',
+                        'cat' => 7,
+                    );
+
+                    $catquery = new WP_Query( $args );
+
+                    // $catquery = new WP_Query( 'cat=7&posts_per_page=2' );
+
+                    while($catquery->have_posts()) : $catquery->the_post();
+                    ?>
+                
+                        <figure class="blur effect-sarah">
+                            <img src="<?php echo get_bloginfo('template_directory');?>/img/2.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2><?php the_title(); ?></h2>
+                                <p class="excerpt"><?php the_excerpt(); ?></p>
+                                <a href="<?php the_permalink(); ?>">View more</a>
+                            </figcaption>           
+                        </figure>
+                
+                    <?php endwhile; ?>
+
+                </div>
+
             </div>
 
-            <div class="poli-2 cool">
-                <img src="<?php echo get_bloginfo('template_directory');?>/img/poli-2.png" alt="" />
+            <div class="case-3 page">
+
+                <div class="grid">
+
+                    <?php
+
+                    // https://codex.wordpress.org/Class_Reference/WP_Query
+
+                    $args = array(
+                        'orderby' => 'title',
+                        'posts_per_page' => '1',
+                        'cat' => 7,
+                    );
+
+                    $catquery = new WP_Query( $args );
+
+                    // $catquery = new WP_Query( 'cat=7&posts_per_page=2' );
+
+                    while($catquery->have_posts()) : $catquery->the_post();
+                    ?>
+                
+                        <figure class="blur effect-sarah">
+                            <img src="<?php echo get_bloginfo('template_directory');?>/img/3.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2><?php the_title(); ?></h2>
+                                <p class="excerpt"><?php the_excerpt(); ?></p>
+                                <a href="<?php the_permalink(); ?>">View more</a>
+                            </figcaption>           
+                        </figure>
+                
+                    <?php endwhile; ?>
+
+                </div>
+
             </div>
 
-            <div class="poli-3 cool">
-                <img src="<?php echo get_bloginfo('template_directory');?>/img/poli-3.png" alt="" />
-            </div>
-
-            <div class="poli-4 cool">
-                <img src="<?php echo get_bloginfo('template_directory');?>/img/poli-3.png" alt="" />
-            </div> -->
+           
 
         </div>
 
