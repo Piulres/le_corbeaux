@@ -30,6 +30,8 @@
 
 <body <?php body_class(); ?> onload="myFunction()" style="margin:0;">
 
+<p id="showBottom">Menu</p>
+
 <div id="myDiv" class="animate-bottom">
 
 	<?php if ( is_front_page() ) { ?>
@@ -39,6 +41,7 @@
 		        <a href="<?php echo get_home_url(); ?>">
 		            <img src="<?php echo get_bloginfo('template_directory');?>/img/header_png.png" alt="Le Corbeaux">
 		        </a>
+				
 		    </div>
 		</div>
 
@@ -49,6 +52,7 @@
 		        <a href="<?php echo get_home_url(); ?>">
 		            <img src="<?php echo get_bloginfo('template_directory');?>/img/header_png.png" alt="Le Corbeaux">
 		        </a>
+
 		    </div>
 		</div>
 

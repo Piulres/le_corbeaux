@@ -15,4 +15,6 @@
 
 <link href='<?php echo get_bloginfo('template_directory');?>/css/set1.css' rel='stylesheet' type='text/css'>
 
+<link href='<?php echo get_bloginfo('template_directory');?>/css/menu.css' rel='stylesheet' type='text/css'>
+
 <link href='<?php echo get_bloginfo('template_directory');?>/style.css' rel='stylesheet' type='text/css'>

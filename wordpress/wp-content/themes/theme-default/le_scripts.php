@@ -10,4 +10,6 @@
 
 <script type='text/javascript' src='<?php echo get_bloginfo('template_directory');?>/js/prognroll.min.js'></script>
 
+<script type='text/javascript' src='<?php echo get_bloginfo('template_directory');?>/js/classie.js'></script>
+
 <script type='text/javascript' src='<?php echo get_bloginfo('template_directory');?>/js/script.js'></script>

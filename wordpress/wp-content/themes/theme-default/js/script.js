@@ -69,3 +69,18 @@ $(function() {
         custom:false     //If you make it true, you can add your custom div and see it's scroll progress on the page    
     });
 });
+
+$( document ).ready(function() {
+   
+    $(function() {
+      $("#showBottom").on("click", function(e) {
+        $("#cbp-spmenu-s4").toggleClass("cbp-spmenu-open");
+      });
+      $(document).on("click", function(e) {
+        if ($(e.target).is("#cbp-spmenu-s4, #showBottom") === false) {
+          $("#cbp-spmenu-s4").removeClass("cbp-spmenu-open");
+        }
+      });
+    });
+
+});

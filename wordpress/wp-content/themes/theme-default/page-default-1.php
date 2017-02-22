@@ -15,8 +15,6 @@
         </div>
 
         <div class="front scroll">
-            
-            
 
             <div class="case-1 page">
 
@@ -126,9 +124,7 @@
 
             </div>
 
-           
-
-        </div>
+        </div>        
 
     </div>
 
